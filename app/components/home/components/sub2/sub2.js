@@ -1,7 +1,6 @@
-import view from './home.html';
-import './home.scss';
+import view from './sub2.html';
 
-class HomeController {
+class Sub2Controller {
 
   constructor() {
     'ngInject';
@@ -13,13 +12,13 @@ class HomeController {
 
 /**
  * @ngdoc directive
- * @name home
+ * @name sub2
  * @scope
  * @restrict E
  */
-export const home = {
+export const sub2 = {
   bindings: {},
-  controller: HomeController,
+  controller: Sub2Controller,
   controllerAs: 'vm',
   template: view
 };

@@ -1,5 +1,33 @@
 home {
   main {
-    background-color: #81D4FA;
+    background-color: #B3E5FC;
+  }
+}
+
+.tabs {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+
+  li {
+    border-right: 1px solid #999;
+
+    a {
+      background-color: #FFECB3;
+      color: black;
+      display: block;
+      font-weight: 600;
+      padding: 8px 16px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #FFE082;
+      }
+    }
+
+    &:last-child {
+      border-right: 0;
+    }
   }
 }

@@ -1,6 +1,6 @@
 // Load sub modules
-import loginModule from './login/login.module.js';
-import homeModule  from './home/home.module';
+import loginModule from './login';
+import homeModule  from './home';
 
 function routesConfig($urlRouterProvider) {
   'ngInject';
