@@ -1,20 +1,18 @@
 # Temp files
-tmp/
-.tmp/
-
-# Sass
-.sass-cache
+/tmp
+.tmp
 
 # Logs
-logs
+/logs
 *.log
+npm-debug.log*
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
-build/Release
+/build/Release
 
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
-node_modules
+/node_modules
 
 # OS generated files
 .DS_STORE
@@ -25,7 +23,6 @@ Thumbs.db
 
 # Editors stuff
 .idea
-.project
 
 # Testing
 /coverage
