@@ -43,7 +43,7 @@ const config = {
     // The bundling output directory (must be absolute path)
     path: distPath,
     // Set proper base URL for serving resources
-    publicPath: '/',
+    publicPath: '',
     // The output filename of the entry chunk, relative to `path`
     // [name] - Will be set per each key name in `entry`
     filename: distPathPattern
