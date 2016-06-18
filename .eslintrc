@@ -1,0 +1,65 @@
+{
+  "root": true,
+  "extends": ["angular", "eslint:recommended"],
+
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jasmine": true,
+    "commonjs": true,
+    "node": true
+  },
+
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+
+  "globals": {
+    "__ENV": true,
+    "__API_URL": true,
+    "__TRACK_ID": true
+  },
+
+  "rules": {
+    // Warning
+    "max-len": [1, { "code": 100, "ignoreUrls": true }],
+    "no-console": 1,
+    "no-debugger": 1,
+    "no-unreachable": 1,
+    "no-unused-vars": [1, { "vars": "all", "args": "after-used" }],
+    "newline-after-var": [1, "always"],
+    "operator-linebreak": [1, "after", { "overrides": { "?": "before", ":": "before" } }],
+    "newline-before-return": 1,
+
+    // Error
+    "strict": [2, "never"],
+    "indent": [2, 2, { "SwitchCase": 1 }],
+    "quotes": [2, "single", { "allowTemplateLiterals": true }],
+    "linebreak-style": [2, "unix"],
+    "semi": [2, "always"],
+    "no-else-return": 2,
+    "brace-style": [2, "stroustrup", { "allowSingleLine": false }],
+    "curly": [2, "all"],
+    "object-curly-spacing": [2, "always"],
+    "arrow-parens": [2, "always"],
+    "space-before-blocks": [2, "always"],
+    "arrow-spacing": 2,
+    "keyword-spacing": 2,
+    "no-inline-comments": 2,
+    "spaced-comment": [2, "always", { "exceptions": ["-"] }],
+    "no-nested-ternary": 2,
+    "no-unneeded-ternary": [2, { "defaultAssignment": false }],
+    "no-var": 2,
+    "eqeqeq": [2, "always"],
+
+    // Angular
+
+    // Disabled
+    "angular/log": 0,
+    "angular/no-service-method": 0,
+    "angular/json-functions": 0,
+    "angular/definedundefined": 0,
+    "angular/document-service": 0
+  }
+}

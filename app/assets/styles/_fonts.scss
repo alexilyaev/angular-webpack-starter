@@ -1,0 +1,75 @@
+/**
+ * Load Open Sans Fonts (from `open-sans-fontface` package in `node_modules`)
+ */
+
+$OpenSansPath: '~open-sans-fontface/fonts';
+
+/**
+ * Cross browser font loading
+ */
+
+@mixin fontdef($OpenSansPath, $FontType:'Regular') {
+  $path: $OpenSansPath + '/' + $FontType + '/OpenSans-' + $FontType;
+
+  src: /* Super Modern Browsers */
+    url('#{$path}.woff2') format('woff2'),
+      /* Pretty Modern Browsers */
+    url('#{$path}.woff') format('woff'),
+      /* Safari, Android, iOS */
+    url('#{$path}.ttf') format('truetype');
+}
+
+/**
+ * Light
+ */
+
+@font-face {
+  font-family: 'Open Sans';
+  @include fontdef($OpenSansPath, 'Light');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/**
+ * Regular
+ */
+
+@font-face {
+  font-family: 'Open Sans';
+  @include fontdef($OpenSansPath, 'Regular');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/**
+ * Semi-Bold
+ */
+
+@font-face {
+  font-family: 'Open Sans';
+  @include fontdef($OpenSansPath, 'Semibold');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/**
+ * Bold
+ */
+
+@font-face {
+  font-family: 'Open Sans';
+  @include fontdef($OpenSansPath, 'Bold');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/**
+ * Italic
+ */
+
+@font-face {
+  font-family: 'Open Sans';
+  @include fontdef($OpenSansPath, 'Italic');
+  font-weight: normal;
+  font-style: italic;
+}
