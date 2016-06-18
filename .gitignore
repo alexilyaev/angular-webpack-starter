@@ -1,6 +1,6 @@
 # Temp files
-tmp/**
-.tmp/**
+tmp/
+.tmp/
 
 # Sass
 .sass-cache
@@ -26,10 +26,6 @@ Thumbs.db
 # Editors stuff
 .idea
 .project
-
-# Build stuff
-/dist
-/app/dist
 
 # Testing
 /coverage
