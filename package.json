@@ -10,7 +10,7 @@
     "build": "NODE_ENV=production webpack -p --progress",
     "prebuildwin": "npm prune&npm install",
     "buildwin": "set NODE_ENV=production&webpack -p --progress",
-    "lint": "eslint -c .eslintrc-build --ignore-path .gitignore ."
+    "lint": "eslint -c .eslintrc-build ."
   },
   "repository": {
     "type": "git",
